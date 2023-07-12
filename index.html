@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Redirect</title>
 <script type="text/javascript">
-// iPhone Version:
-if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-    window.location = "https://www.apple.com/ru/app-store/";
-}
-// Android Version:
+// Android:
 else if(navigator.userAgent.match(/android/i)) {
     window.location = "https://play.google.com/store/games?hl=ru&gl=US";
 }
-// Other Devices:
+// iPhone:
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+    window.location = "https://www.apple.com/ru/app-store/";
+}
+// Other:
 else {
     window.location = "https://www.google.com/";
 }
